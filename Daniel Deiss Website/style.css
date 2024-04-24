@@ -1,0 +1,103 @@
+/* styles.css */
+
+body {
+    background-color: #333333;
+    margin: 0; /* Added to remove default body margin */
+}
+
+.coloredwhite {
+    color: white;
+}
+
+.whiteborder {
+    border-color: white;
+    border-width: 5px;
+}
+
+.picsize {
+    height: 500px;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.button:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 70%;
+    width: 1px;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+.col-4 {
+    flex: 1;
+    margin: 0;
+}
+
+.selectedbutton {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.col-8 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.coloredwhite.left-align-text {
+    padding-top: 20px; /* Adjust padding between video and text above */
+}
+
+.left-align-text {
+    text-align: left;
+}
+
+/* Updated video container styles */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; /* Adjust the height as needed */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.video-container iframe {
+    width: 100%; /* Use 100% width for responsiveness */
+    max-width: 1200px;
+    height: 100%; /* Use 100% height for responsiveness */
+    max-height: 675px;
+}
